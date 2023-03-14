@@ -1,0 +1,24 @@
+
+
+.navbar-header {
+    box-shadow: 0 4px 12px 0 rgb(0 0 0/5%);
+    top: 5rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0/5%);
+    top: 5rem;
+}
+
+.nav-link {
+    color: #252525;
+    font-size: small;
+    font-weight: 700;
+    margin: 0 2px;
+    padding: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}

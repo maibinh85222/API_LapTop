@@ -1,0 +1,34 @@
+
+.footer-logo {
+    align-self: center
+}
+
+.links {
+    list-style: none;
+}
+
+.links>li {
+    padding: 4px 0;
+}
+
+.link {
+    color: #313131;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-row, .flex-row-center {
+    display: flex;
+}
+
+footer {
+    justify-content: space-around;
+}

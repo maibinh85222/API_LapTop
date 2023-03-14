@@ -1,0 +1,188 @@
+/* @import url("https://dazzle-ui-components.netlify.app/components/components.css"); */
+@import url("https://cdn.jsdelivr.net/gh/ApurvaSawant11/Dazzle-UI-Components@development/components/components.min.css");
+
+:root {
+    --primary: #252525;
+    --discounted-price: #f53f3f;
+    --card-button-hover: #f0fffb;
+    --opacity-50: rgba(0, 0, 0, 0.26);
+    --opacity-80: rgba(0, 0, 0, 0.8);
+    --opacity-white: #ffffffb8;
+    /* !important is used to override react toastify colors */
+    --toastify-color-info: var(--info) !important;
+    --toastify-color-success: var(--secondary) !important;
+    --toastify-color-warning: var(--warning) !important;
+    --toastify-color-error: var(--danger) !important;
+    --toastify-text-color-light: var(--primary) !important;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+
+.container {
+    display: contents;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1rem;
+    width: 100%;
+}
+
+.display-block, .navbar-searchbar {
+    display: block;
+}
+
+.myhamburger, .drawer-header, .drawer-footer {
+    display: none;
+}
+
+.dots{
+    background-color: var(--shadow);
+}
+.enable, .dots:hover {
+    background-color: var(--theme-text-color);
+}
+
+.radius-0{
+    border-radius: 0;
+}
+
+.image-container  {
+    height: 80vh;
+}
+
+.not-found-image {
+    /* background-image: url("./assets/images/empty-page.jpg"); */
+    width: 100%;
+    object-fit: cover;
+    object-position: 20% 100%;
+}
+
+.not-found-image > div {
+     background: var(--opacity-white);
+}
+
+.empty-page-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 100%;
+}
+
+.empty-page-text {
+    position: absolute;
+    right: 7rem;
+    width: 35%;
+    background: var(--opacity-white);
+    padding: 0.5rem 1rem;  
+}
+
+.empty-page-text h5 {
+    font-size: 3rem;
+}
+
+.mb-4{
+    margin-bottom: 4rem;
+}
+
+/* || Media Queries */
+
+@media screen and (max-width: 1100px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+    }
+
+    .empty-page-text {
+        width: 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 860px) {
+
+    .myhamburger {
+        display: block;
+        margin-left: 1rem;
+    }
+
+    .product-title {
+        padding: 0;
+    }
+
+    .drawer-header {
+        display: flex;
+    }
+
+    .sub-navigation {
+        display: none;
+    }
+
+    .nav-drawer {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem 0.5rem 2rem;
+    }
+
+    footer {
+        font-size: small;
+        padding: 0.5rem;
+    }
+
+    footer h6 {
+        font-size: small;
+    }
+
+    .empty-page-text{
+        right: 6rem;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .drawer-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        padding: 0.5rem;
+    }
+
+    .empty-page-text {
+        width: 90%;
+        right: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .sub-header {
+        font-size: small;
+    }
+
+    footer {
+        padding: 0;
+    }
+}
+
+/* || Hide number arrows */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
